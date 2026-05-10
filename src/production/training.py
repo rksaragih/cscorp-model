@@ -14,8 +14,8 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # =========================
 # CONFIG
 # =========================
-DATA_PATH = "../data/production_cost_dataset.csv"
-MODEL_PATH = "../models/model_rf.pkl"
+DATA_PATH = "../../data/production_cost_dataset.csv"
+MODEL_PATH = "../models/production/model_rf.pkl"
 
 # =========================
 # LOAD DATA

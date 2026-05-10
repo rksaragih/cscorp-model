@@ -15,7 +15,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # =========================
 # LOAD DATA
 # =========================
-DATA_PATH = "../data/production_cost_dataset.csv"
+DATA_PATH = "../../data/production_cost_dataset.csv"
 
 df = pd.read_csv(DATA_PATH)
 
