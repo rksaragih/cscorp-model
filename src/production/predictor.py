@@ -1,11 +1,18 @@
 import joblib
 import pandas as pd
+import os
 
+# Ambil lokasi folder file ini berada (src/production)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Susun path ke file model secara absolut
+# Kita naik 2 tingkat (ke ml-api) lalu masuk ke models/production/
+model_path = os.path.join(BASE_DIR, "..", "..", "models", "production", "model_rf.pkl")
 
 # =========================
 # LOAD MODEL
 # =========================
-model = joblib.load("../../models/production/model_rf.pkl")
+model = joblib.load(model_path)
 
 
 # =========================
